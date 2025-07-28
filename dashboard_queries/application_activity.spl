@@ -1,0 +1,5 @@
+index=main source="/var/log/system.log" "ASL Sender Statistics"
+| rex "syslogd\[(?<pid>\d+)\]: (?<message>ASL Sender Statistics)"
+| stats count by _time, message
+
+

@@ -1,0 +1,12 @@
+index=main source="/var/log/system.log" ("USER_PROCESS" OR "DEAD_PROCESS")
+| rex "login\[(?<pid>\d+)\]: (?<status>USER_PROCESS|DEAD_PROCESS): \d+ (?<tty>\w+)"
+| stats count by status, tty, _time
+
+
+
+
+
+
+
+
+

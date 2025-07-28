@@ -1,0 +1,5 @@
+index=main source="/var/log/wifi.log" "Health check alive"
+| rex "count\[(?<checkin_count>\d+)\]"
+| stats count as total_health_checks max(checkin_count) as max_count by host
+
+
