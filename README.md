@@ -1,3 +1,10 @@
+🚀 Getting Started
+
+1. Install Splunk from the official site.
+2. Ingest log files such as `/var/log/system.log` and `/var/log/wifi.log`.
+3. Use the SPL queries in `dashboard_queries/` to explore data in Splunk Search.
+
+
 # System Log Monitoring with Splunk
 
 This project analyzes system log files for:
