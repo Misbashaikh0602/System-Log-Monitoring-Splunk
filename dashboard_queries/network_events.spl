@@ -1,6 +1,10 @@
 # This query monitors Wi-Fi health check logs.
+<<<<<<< HEAD
 # It extracts the check-in count and summarizes the total health checks and max
 imum check-in value by host.
+=======
+# It extracts the check-in count and summarizes the total health checks and maximum check-in value by host.
+>>>>>>> b2d6b273ba000680a53ee17b0f3b7611bd0ca110
 
 index=main source="/var/log/wifi.log" "Health check alive"
 | rex "count\[(?<checkin_count>\d+)\]"

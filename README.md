@@ -19,7 +19,7 @@ It includes dashboards, SPL queries, and scheduled alerts for proactive monitori
 
 - `dashboard_queries/`: SPL queries for dashboards
 - `alerts.md`: Alert configurations
-- `screenshots/`: Saved images of dashboards and alerts (optional)
+- `screenshots/`: images of dashboards 
 
 
 # System-Log-Monitoring-Splunk

@@ -1,7 +1,12 @@
 # This query detects user login and logout events.
+<<<<<<< HEAD
 # It extracts the process ID, status (login/logout), and terminal info,
 # then summarizes login activity using stats by status and time.
 
+=======
+# It extracts the process ID, status (login/logout), and terminal info
+# summarizes login activity using stats by status and time.
+>>>>>>> b2d6b273ba000680a53ee17b0f3b7611bd0ca110
 
 index=main source="/var/log/system.log" ("USER_PROCESS" OR "DEAD_PROCESS")
 | rex "login\[(?<pid>\d+)\]: (?<status>USER_PROCESS|DEAD_PROCESS): \d+ (?<tty>\w+)"
