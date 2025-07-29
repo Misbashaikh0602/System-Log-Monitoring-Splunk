@@ -1,5 +1,9 @@
+# 📌 This query extracts ASL Sender Statistics from system logs
+# It uses regex to extract the message and PID, and counts them over time.
+
 index=main source="/var/log/system.log" "ASL Sender Statistics"
 | rex "syslogd\[(?<pid>\d+)\]: (?<message>ASL Sender Statistics)"
 | stats count by _time, message
+
 
 
